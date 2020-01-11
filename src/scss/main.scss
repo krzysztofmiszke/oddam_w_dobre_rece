@@ -1,0 +1,40 @@
+@import './settings/fonts';
+@import './settings/colors';
+
+body {
+    font-family: $font-base;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+
+.start-button {
+    @extend .menu-button;
+    padding: 10px 15px;
+    border: 1px solid $dark-grey;
+}
+
+.menu-button {
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+
+.login-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.register-button {
+    @extend .start-button;
+    border-color: $yellow;
+
+}
+
