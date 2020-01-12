@@ -6,12 +6,12 @@ import React, { Component } from 'react';
 // } from 'react-router-dom';
 // import Link from 'react-scroll'
 
-class OcoChodzi extends Component {
+class Onas extends Component {
     render() {
         return (
-            <div id='o-co-chodzi'>O co chodzi</div>
+            <div id='o-nas'>O nas</div>
         )
     }
 }
 
-export default OcoChodzi;
+export default Onas;

@@ -4,14 +4,16 @@ import React, { Component } from 'react';
 //   BrowserRouter as Router,
 //   Route
 // } from 'react-router-dom';
-// import Link from 'react-scroll'
+// import Link from 'react-scroll';
+import LoginMenu from './LoginMenu';
+import Menu from './Menu';
 
-class OcoChodzi extends Component {
+class Kontakt extends Component {
     render() {
         return (
-            <div id='o-co-chodzi'>O co chodzi</div>
+                <div id='kontakt'>Kontakt</div>
         )
     }
 }
 
-export default OcoChodzi;
+export default Kontakt;

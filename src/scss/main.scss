@@ -1,8 +1,45 @@
 @import './settings/fonts';
 @import './settings/colors';
 
+a {
+    text-decoration: none;
+    color: $dark-grey;
+}
+
 body {
+    margin: 50px 100px 0 0;
+    font-family: $font-base;  
+}
+
+.home {
+    height: 100vh;
+    background-image: url('../assets/Home-Hero-Image.jpg');
+    background-repeat: no-repeat;
+    background-position: -480px 0;
+}
+
+.home-header {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 2em;
+    margin: 50px 100px 0 0;
     font-family: $font-base;
+    color: $dark-grey;
+}
+
+.text-and-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.decoration-image {
+    width: 250px;
+    height: 34px;
+    margin-bottom: 50px;
+    background-image: url('../assets/Decoration.svg');
 }
 
 li {
@@ -27,6 +64,19 @@ li {
     cursor: pointer;
 }
 
+.buttons {
+    display: flex;
+    min-width: 590px;
+    justify-content: space-between;
+}
+.main-button {
+    border: 1px solid $dark-grey;
+    color: $dark-grey;
+    background-color: white;
+    text-align: center;
+    width: 275px;
+}
+
 .login-menu {
     display: flex;
     justify-content: flex-end;
@@ -35,6 +85,21 @@ li {
 .register-button {
     @extend .start-button;
     border-color: $yellow;
+}
 
+#o-co-chodzi {
+    height: 100vh;
+}
+
+#o-nas {
+    @extend #o-co-chodzi;
+}
+
+#fundacja-i-organizacje {
+    @extend #o-co-chodzi;
+}
+
+#kontakt {
+    @extend #o-co-chodzi;
 }
 

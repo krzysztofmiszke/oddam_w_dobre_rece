@@ -10,8 +10,12 @@ class LoginMenu extends Component {
     render() {
         return (
                 <ul className='login-menu'>
-                    <li className='menu-button'>Zaloguj</li>
-                    <li className='register-button'>Załóż konto</li>
+                    <li>
+                        <Link to='/logowanie' className='menu-button'>Zaloguj</Link>
+                    </li>
+                    <li>
+                        <Link to='/rejestracja' className='register-button'>Załóż konto</Link>
+                    </li>
                 </ul>
         )
     }
