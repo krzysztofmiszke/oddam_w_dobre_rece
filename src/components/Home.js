@@ -17,6 +17,8 @@ class Home extends Component {
                     <LoginMenu />
                     <Menu />
                     <HomeHeader />
+                </div>
+                <div>
                     <HomeThreeColumns />
                 </div>
                 <div>
