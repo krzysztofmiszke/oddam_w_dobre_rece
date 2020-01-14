@@ -30,7 +30,7 @@ class OcoChodzi extends Component {
                         <div>Zamów kuriera<hr></hr>kurier przyjedzie w dogodnym terminie</div>                 
                     </div>
                 </div>
-                <Link to='/logowanie' className='main-button'>ODDAJ <br/> RZECZY</Link>
+                <Link to='/logowanie' className='main-button-o-co-chodzi'>ODDAJ <br/> RZECZY</Link>
             </div>
         )
     }

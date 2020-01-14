@@ -17,19 +17,26 @@ hr {
     color: $dark-grey;
 }
 
-body {
-    margin: 50px 0 0 0;
+html, body {
+    width: 100%;
+    margin: 50px auto;
+    // margin: 50px 0 0 0;
     font-family: $font-base;  
 }
 
 .home {
+    @media (max-device-width: 1026px) {
+        background-size: contain;
+        background-position: -480px 0;
+    }
     display: flex;
     flex-direction: column;
     height: 100vh;
     background-image: url('../assets/Home-Hero-Image.jpg');
     background-repeat: no-repeat;
-    background-position: -480px -50px;
-    padding-bottom: 130px;
+    background-size: contain;
+    background-position: -280px 0;
+    // // padding-bottom: 130px;
 }
 
 .home-header {
@@ -180,11 +187,12 @@ li {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     background-color: #fff; 
     font-size: 1.5em;
+    margin: 150px 0 150px 0;
 }
 
 .icons {
@@ -275,4 +283,50 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('../assets/Icon-4.svg');
+}
+
+.main-button-o-co-chodzi {
+    @extend .main-button;
+    margin-bottom: 50px;
+}
+
+#o-nas {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.o-nas-text {
+    margin-bottom: 50px; 
+}
+
+.o-nas-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.o-nas-text {
+    text-align: center;
+    color: $dark-grey;
+    font-size: 2em;
+}
+
+.o-nas-right {
+    width: 50%;
+    background-position: -250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/People.jpg');
+}
+
+.signature {
+    width: 25%;
+    height: 12%;
+    margin-left: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/Signature.svg');
 }
