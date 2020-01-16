@@ -13,7 +13,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <div className='home'>
+                <div id="start" className='home'>
                     <LoginMenu />
                     <Menu />
                     <HomeHeader />
