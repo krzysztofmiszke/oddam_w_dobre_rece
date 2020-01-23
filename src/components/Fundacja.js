@@ -5,7 +5,7 @@ class Fundacja extends Component {
         super(props);
         this.state = {
             pageContent: [],
-            fundacjaContent: ['dbam-o-zdrowie', 'dla-dzieci', 'bez-domu', 'dbam-o-zdrowie-2', 'dla-dzieci-2', 'bez-domu-2', 'dbam-o-zdrowie-3', 'dla-dzieci-3', 'bez-domu-3'],
+            fundacjaContent: ['Fundacja "Dbam o Zdrowie"', 'dla-dzieci', 'bez-domu', 'dbam-o-zdrowie-2', 'dla-dzieci-2', 'bez-domu-2', 'dbam-o-zdrowie-3', 'dla-dzieci-3', 'bez-domu-3'],
             organizacjaContent: ['lorem-1-1', 'lorem-1-1', 'lorem-1-1', 'lorem-1-2', 'lorem-2-2', 'lorem-3-2'],
             zbiorkaContent: ['zbiorka-1', 'zbiorka-2', 'zbiorka-3'],
             activePage: 1,
@@ -41,7 +41,10 @@ class Fundacja extends Component {
         const FirstPage = LastPage - itemsPerPage;
         const currentContent = this.current.slice(FirstPage, LastPage);
         const renderContent = currentContent.map((content, index) => {
-            return <li key={index}>{content}</li>;
+            const fundacjaDescription = 'Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.';
+            const fundacjaItems = 'ubrania, jedzenie, sprzęt AGD, medble, zabawki';
+
+        return (<li key={index}>{content} <p> {fundacjaDescription} </p></li>);
         });
 
         const pageNumbers = [];
@@ -77,40 +80,5 @@ class Fundacja extends Component {
         );
     }
 }
-
-
-    // fundacjom = () => {
-    //     this.setState({ content: <FundacjaSub1 /> });
-    // }
-
-    // organizacjom = () => {
-    //     this.setState({ content: <FundacjaSub2 /> });
-    // }
-
-    // lokalnym = () => {
-    //     this.setState({ content: <FundacjaSub3 /> });
-    // }
-    
-//     render() {
-//         const = {}
-//         return (
-//             <div id='fundacja-i-organizacje'>
-//                 <div className='fundacja-header'>Komu pomagamy?</div>
-//                 <div className='decoration-image'></div>
-
-//             <div className='fundacja-i-organizacje-buttons'>
-//                 <button onClick={this.fundacjom} className='main-button-fundacje'>Fundacjom</button>
-//                 <button onClick={this.organizacjom} className='main-button-organizacje'>Organizacjom pozarządowym</button>
-//                 <button onClick={this.lokalnym} className='main-button-lokalne-organizacje'>Lokalnym zbiórkom</button>
-//             </div>
-//             <p className='fundacja-text'>W naszej bazie znajdzieszz listę zweryfikowanych Fundacji, 
-//                 z którymi współpracujemy. Możesz sprawdzić czym sie zajmują, 
-//                 komu pomagają i czego potrzebują.</p>
-
-//             <div className='fundacja-i-organizacje-content'>{this.state.content}</div>
-//             </div>
-//         );
-//     }
-// }
 
 export default Fundacja;

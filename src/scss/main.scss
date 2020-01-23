@@ -17,6 +17,10 @@ hr {
     color: $dark-grey;
 }
 
+label {
+    display: block;
+}
+
 html, body {
     width: 100%;
     margin: 50px auto;
@@ -395,4 +399,108 @@ li {
     height: 50vh;
     text-align: center;
     border: 1px dotted $dark-grey;
+}
+
+#kontakt {
+    display: flex;
+    align-items: center;
+}
+
+.kontakt-header {
+    @extend .fundacja-header;
+}
+
+.kontakt-left-side {
+    width: 50%;
+    height: 100vh;
+    background-image: url('../assets/Background-Contact-Form.jpg');
+    opacity: 20%; 
+    background-size: cover;
+}
+
+.kontakt-right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    // margin-right: 100px;
+}
+
+.kontakt-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt-first-row {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.kontakt-input {
+    width: 300px;
+    height: 20px;
+    margin: 20px 30px 20px 0;
+    border: none;
+    border-bottom: 1px solid $dark-grey;
+    margin-bottom: 25px;
+}
+
+.kontakt-input:focus {
+    background-color: $light-grey;
+    outline: none;
+}
+
+.kontakt-input-description {
+    width: 630px;
+    height: 100px;
+    border: none;
+    border-bottom: 1px solid $dark-grey;
+    margin: 20px 0 40px 0;
+    
+}
+
+.kontakt-input-description:focus {
+    background-color: $light-grey;
+    outline: none;
+}
+
+.kontakt-input-description::placeholder {
+    height: 100px;
+    word-wrap: normal;
+    color: grey;
+}
+
+.submit-button-position {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 30px 0 0;
+}
+
+.submit-button {
+    border: 1px solid $dark-grey;
+    color: $dark-grey;
+    background-color: white;
+    text-align: center;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 45vw;
+    margin-right: 150px;
+    font-family: $font-base;
+    color: $dark-grey;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ico {
+    margin: 10px;
 }
