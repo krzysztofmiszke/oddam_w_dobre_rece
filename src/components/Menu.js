@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
-// import { 
-//   BrowserRouter as Router,
-//   Route
-// } from 'react-router-dom';
+import { 
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 const options = {
@@ -19,7 +19,7 @@ class Menu extends Component {
         return (
                 <ul className='menu'>
                     <li>
-                        <LinkScroll to='start' className='menu-button' {...options}>Start</LinkScroll>
+                        <LinkScroll to='start' to='/start' className='menu-button' {...options}>Start</LinkScroll>
                     </li>
                     <li>
                         <LinkScroll to='o-co-chodzi' className='menu-button'{...options}>O co chodzi?</LinkScroll>
